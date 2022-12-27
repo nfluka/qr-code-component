@@ -1,0 +1,75 @@
+/* Basic reset from Josh Comeau
+ * https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  background-color: hsl(212deg, 45%, 89%);
+  -webkit-font-smoothing: antialiased;
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding: 1rem;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 1rem;
+}
+.card img {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.card__title {
+  font-size: 1.44rem;
+  text-align: center;
+  font-weight: 700;
+  color: hsl(218deg, 44%, 22%);
+  margin: 1rem 0;
+}
+.card__description {
+  color: hsl(220deg, 15%, 55%);
+  text-align: center;
+  line-height: 1.1rem;
+  margin-bottom: 1rem;
+}
